@@ -37,12 +37,15 @@ Here are a few examples of how DezzyPrint works, taken straight from the DezzyPr
 		Printer.println("This message will not print to the console.");
 		
 When the above code is run, the console will display this:
+
   	This is a message with an appended timestamp
   		>Message Time: 1426027653120
+  		
 	This is a message with an appended stack trace.
-  		>Message Source: com.gmail.jdesmond10.dezzyprint.main.DezzyPrintTutorial.main(DezzyPrintTutorial.java:29)
-  	ERROR:  This is a message that utilizes three different string functions, showing how you can chain together as many different string functions as needed.
-  	  	>Message Time: 1426027653128
-  	  	>Message Source: com.gmail.jdesmond10.dezzyprint.main.DezzyPrintTutorial.main(DezzyPrintTutorial.java:32)
+		>Message Source: com.gmail.jdesmond10.dezzyprint.main.DezzyPrintTutorial.main(DezzyPrintTutorial.java:29)
+		
+	ERROR:  This is a message that utilizes three different string functions, showing how you can chain together as many different string functions as needed.
+		>Message Time: 1426027653128
+		>Message Source: com.gmail.jdesmond10.dezzyprint.main.DezzyPrintTutorial.main(DezzyPrintTutorial.java:32)
 
 
