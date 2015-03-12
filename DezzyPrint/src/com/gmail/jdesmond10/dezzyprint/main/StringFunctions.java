@@ -2,7 +2,8 @@ package com.gmail.jdesmond10.dezzyprint.main;
 
 /**
  * A Collection of different StringFunctions that are included. For uses of
- * these StringFunctions, see {@link DezzyPrintTutorial}
+ * these StringFunctions, see {@link DezzyPrintTutorial}. Every instance of
+ * StringFunctions is a StringFunction, and can be used as so.
  * 
  * @author Josh Desmond
  *
@@ -36,8 +37,19 @@ public enum StringFunctions implements StringFunction {
 		return String.format("ERROR:  %s", s);
 	});
 
+	/**
+	 * This is the only field that an ENUM in StringFunctions will have. These
+	 * are defined above in the constructors.
+	 */
 	private StringFunction f;
 
+	/**
+	 * Constructor for the ENUM.
+	 * 
+	 * @param function
+	 *            The StringFunction (functional interface) with which a value
+	 *            in StringFunctions is going to use.
+	 */
 	private StringFunctions(final StringFunction function) {
 		this.f = function;
 	}
