@@ -4,6 +4,8 @@ import java.util.function.Function;
 
 /**
  * A function that takes a String, modifies it, and returns the modified String.
+ * StringFunction is a {@link FunctionalInterface}, and extends the native
+ * {@link Function} class.
  * 
  * @author Josh Desmond
  *
