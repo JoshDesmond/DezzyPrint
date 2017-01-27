@@ -15,7 +15,7 @@ public enum StringFunctions implements StringFunction {
 	 */
 	TRACE((final String s) -> {
 		final StackTraceElement methodLocation = Thread.currentThread()
-				.getStackTrace()[5];
+				.getStackTrace()[4];
 
 		return s + "\n	>Message Source: " + methodLocation;
 	}),
