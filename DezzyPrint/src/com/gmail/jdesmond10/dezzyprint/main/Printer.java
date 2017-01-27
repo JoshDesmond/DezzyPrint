@@ -63,7 +63,7 @@ public class Printer {
 	 */
 	private static void print(final String string) {
 		// Prints to the PrintStream if and only if it is present.
-		pStream.ifPresent((final PrintStream p) -> (p.println(string)));
+		pStream.ifPresent((PrintStream p) -> p.println(string));
 
 	}
 
